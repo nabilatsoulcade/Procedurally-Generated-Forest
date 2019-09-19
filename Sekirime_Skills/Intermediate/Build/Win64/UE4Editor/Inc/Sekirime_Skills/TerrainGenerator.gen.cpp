@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeTerrainGenerator() {}
 	SEKIRIME_SKILLS_API UClass* Z_Construct_UClass_ATerrainGenerator();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	SEKIRIME_SKILLS_API UFunction* Z_Construct_UFunction_ATerrainGenerator_GenerateTerrain();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	CUSTOMMESHCOMPONENT_API UScriptStruct* Z_Construct_UScriptStruct_FCustomMeshTriangle();
 // End Cross Module References
 class UScriptStruct* FTerrainSegmentType::StaticStruct()
@@ -166,6 +167,11 @@ static struct FScriptStruct_Sekirime_Skills_StaticRegisterNativesFTerrainSegment
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TerrainMeshVertex_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_TerrainMeshVertex;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_TerrainMeshVertex_Inner;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TerrainMeshTris_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_TerrainMeshTris;
@@ -176,10 +182,13 @@ static struct FScriptStruct_Sekirime_Skills_StaticRegisterNativesFTerrainSegment
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_TerrainMesh;
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_TerrainMesh_Inner;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TerrainSegments_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TerrainHeight_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_TerrainSegments;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_TerrainSegments_Inner;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_TerrainHeight;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TerrainWidth_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_TerrainWidth;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -200,6 +209,14 @@ static struct FScriptStruct_Sekirime_Skills_StaticRegisterNativesFTerrainSegment
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMeshVertex_MetaData[] = {
+		{ "Category", "TerrainGenerationSettings" },
+		{ "ModuleRelativePath", "Public/TerrainGenerator.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMeshVertex = { "TerrainMeshVertex", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATerrainGenerator, TerrainMeshVertex), METADATA_PARAMS(Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMeshVertex_MetaData, ARRAY_COUNT(Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMeshVertex_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMeshVertex_Inner = { "TerrainMeshVertex", nullptr, (EPropertyFlags)0x0000000000020000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMeshTris_MetaData[] = {
 		{ "Category", "TerrainGenerationSettings" },
 		{ "ModuleRelativePath", "Public/TerrainGenerator.h" },
@@ -216,21 +233,34 @@ static struct FScriptStruct_Sekirime_Skills_StaticRegisterNativesFTerrainSegment
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMesh = { "TerrainMesh", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATerrainGenerator, TerrainMesh), METADATA_PARAMS(Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMesh_MetaData)) };
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMesh_Inner = { "TerrainMesh", nullptr, (EPropertyFlags)0x0000000000020000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainSegments_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainHeight_MetaData[] = {
 		{ "Category", "TerrainGenerationSettings" },
+		{ "ClampMin", "3" },
 		{ "ModuleRelativePath", "Public/TerrainGenerator.h" },
-		{ "ToolTip", "Terrain Element Entry" },
+		{ "ToolTip", "Terrain Width" },
+		{ "UIMin", "3" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainSegments = { "TerrainSegments", nullptr, (EPropertyFlags)0x0010008000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATerrainGenerator, TerrainSegments), METADATA_PARAMS(Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainSegments_MetaData, ARRAY_COUNT(Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainSegments_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainSegments_Inner = { "TerrainSegments", nullptr, (EPropertyFlags)0x0000008000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FTerrainSegmentType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainHeight = { "TerrainHeight", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATerrainGenerator, TerrainHeight), METADATA_PARAMS(Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainHeight_MetaData, ARRAY_COUNT(Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainHeight_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainWidth_MetaData[] = {
+		{ "Category", "TerrainGenerationSettings" },
+		{ "ClampMin", "3" },
+		{ "ModuleRelativePath", "Public/TerrainGenerator.h" },
+		{ "ToolTip", "Terrain Width" },
+		{ "UIMin", "3" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainWidth = { "TerrainWidth", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATerrainGenerator, TerrainWidth), METADATA_PARAMS(Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainWidth_MetaData, ARRAY_COUNT(Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainWidth_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATerrainGenerator_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMeshVertex,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMeshVertex_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMeshTris,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMeshTris_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainMesh_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainSegments,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainSegments_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainHeight,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrainGenerator_Statics::NewProp_TerrainWidth,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATerrainGenerator_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ATerrainGenerator>::IsAbstract,
@@ -259,7 +289,7 @@ static struct FScriptStruct_Sekirime_Skills_StaticRegisterNativesFTerrainSegment
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATerrainGenerator, 2408341659);
+	IMPLEMENT_CLASS(ATerrainGenerator, 1342924890);
 	template<> SEKIRIME_SKILLS_API UClass* StaticClass<ATerrainGenerator>()
 	{
 		return ATerrainGenerator::StaticClass();

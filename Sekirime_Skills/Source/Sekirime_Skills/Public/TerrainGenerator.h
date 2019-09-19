@@ -41,15 +41,19 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	/** Add segments to the Terrain Builder */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings)
-		/** Terrain Element Entry */
-		TArray<FTerrainSegmentType> TerrainSegments;
-	
+	/** Terrain Width */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings, meta = (ClampMin = "3", UIMin = "3"))
+		int32 TerrainWidth = 3;
+	/** Terrain Width */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings, meta = (ClampMin = "3", UIMin = "3"))
+		int32 TerrainHeight = 3;
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = TerrainGenerationSettings)
 		TArray< int32 > TerrainMesh;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = TerrainGenerationSettings)
 		TArray< FCustomMeshTriangle > TerrainMeshTris;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = TerrainGenerationSettings)
+		TArray< FVector > TerrainMeshVertex;
 	//Terrain Generation Algorithm
 	UFUNCTION()
 		void GenerateTerrain();
