@@ -13,16 +13,36 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SEKIRIME_SKILLS_TerrainGenerator_generated_h
 
-#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_15_GENERATED_BODY \
+#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_18_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTerrainSegmentType_Statics; \
 	SEKIRIME_SKILLS_API static class UScriptStruct* StaticStruct();
 
 
 template<> SEKIRIME_SKILLS_API UScriptStruct* StaticStruct<struct FTerrainSegmentType>();
 
-#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_RPC_WRAPPERS
-#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_RPC_WRAPPERS_NO_PURE_DECLS
-#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_INCLASS_NO_PURE_DECLS \
+#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGenerateTerrain) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GenerateTerrain(); \
+		P_NATIVE_END; \
+	}
+
+
+#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGenerateTerrain) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GenerateTerrain(); \
+		P_NATIVE_END; \
+	}
+
+
+#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATerrainGenerator(); \
 	friend struct Z_Construct_UClass_ATerrainGenerator_Statics; \
@@ -31,7 +51,7 @@ public: \
 	DECLARE_SERIALIZER(ATerrainGenerator)
 
 
-#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_INCLASS \
+#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_INCLASS \
 private: \
 	static void StaticRegisterNativesATerrainGenerator(); \
 	friend struct Z_Construct_UClass_ATerrainGenerator_Statics; \
@@ -40,7 +60,7 @@ public: \
 	DECLARE_SERIALIZER(ATerrainGenerator)
 
 
-#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_STANDARD_CONSTRUCTORS \
+#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATerrainGenerator(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATerrainGenerator) \
@@ -53,7 +73,7 @@ private: \
 public:
 
 
-#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_ENHANCED_CONSTRUCTORS \
+#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATerrainGenerator(ATerrainGenerator&&); \
@@ -64,26 +84,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATerrainGenerator); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATerrainGenerator)
 
 
-#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_PRIVATE_PROPERTY_OFFSET
-#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_24_PROLOG
-#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_GENERATED_BODY_LEGACY \
+#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_PRIVATE_PROPERTY_OFFSET
+#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_PROLOG
+#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_PRIVATE_PROPERTY_OFFSET \
-	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_RPC_WRAPPERS \
-	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_INCLASS \
-	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_STANDARD_CONSTRUCTORS \
+	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_PRIVATE_PROPERTY_OFFSET \
+	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_RPC_WRAPPERS \
+	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_INCLASS \
+	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_GENERATED_BODY \
+#define Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_PRIVATE_PROPERTY_OFFSET \
-	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
-	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_INCLASS_NO_PURE_DECLS \
-	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_27_ENHANCED_CONSTRUCTORS \
+	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_PRIVATE_PROPERTY_OFFSET \
+	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_INCLASS_NO_PURE_DECLS \
+	Sekirime_Skills_Source_Sekirime_Skills_Public_TerrainGenerator_h_30_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

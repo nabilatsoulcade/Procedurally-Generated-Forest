@@ -6,7 +6,10 @@
 #include "GameFramework/Actor.h"
 #include "KismetProceduralMeshLibrary.h"
 #include "ProceduralMeshComponent.h"
+#include "CustomMeshComponent.h"
 #include "TerrainGenerator.generated.h"
+
+#define TerrainPrint(x) if(GEngine){GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, TEXT(x));}
 
 //Forest Terrain Segment Data Type
 USTRUCT(BlueprintType, Blueprintable)
@@ -42,5 +45,13 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings)
 		/** Terrain Element Entry */
 		TArray<FTerrainSegmentType> TerrainSegments;
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = TerrainGenerationSettings)
+		TArray< int32 > TerrainMesh;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = TerrainGenerationSettings)
+		TArray< FCustomMeshTriangle > TerrainMeshTris;
+	//Terrain Generation Algorithm
+	UFUNCTION()
+		void GenerateTerrain();
 
 };

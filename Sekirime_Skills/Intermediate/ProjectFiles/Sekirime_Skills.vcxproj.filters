@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <None Include="..\..\Sekirime_Skills.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{22DE301B-1AAD-43E1-9948-150937CCB5A3}</UniqueIdentifier>
+      <UniqueIdentifier>{B97BCB6A-6458-4A93-B7B2-1290290A36C6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Sekirime_Skills.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{AE4604ED-7C14-4E5C-A951-2615AC9EEF40}</UniqueIdentifier>
+      <UniqueIdentifier>{B12B258F-260D-4EC7-BD06-3AFC6E1D54E9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Sekirime_Skills">
-      <UniqueIdentifier>{EA8834E1-FCE3-4FE8-9486-1B87050C4AB5}</UniqueIdentifier>
+      <UniqueIdentifier>{6CA73FBC-FD31-48D1-87A5-3CD56F80023F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Sekirime_Skills\Sekirime_Skills.Build.cs">
       <Filter>Source\Sekirime_Skills</Filter>
@@ -54,13 +54,13 @@
       <Filter>Source\Sekirime_Skills</Filter>
     </ClInclude>
     <Filter Include="Source\Sekirime_Skills\Private">
-      <UniqueIdentifier>{C0FFFF8B-ED35-4638-B93E-7C03B0DEFF6C}</UniqueIdentifier>
+      <UniqueIdentifier>{C0FAC739-962A-4DA0-97A4-8A5E970DF4DE}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Sekirime_Skills\Private\TerrainGenerator.cpp">
       <Filter>Source\Sekirime_Skills\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Sekirime_Skills\Public">
-      <UniqueIdentifier>{C8619D72-1CA4-480B-BBF8-848A70D9835D}</UniqueIdentifier>
+      <UniqueIdentifier>{CEE3EB95-4632-4876-9547-6E8487A4772C}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Sekirime_Skills\Public\TerrainGenerator.h">
       <Filter>Source\Sekirime_Skills\Public</Filter>
