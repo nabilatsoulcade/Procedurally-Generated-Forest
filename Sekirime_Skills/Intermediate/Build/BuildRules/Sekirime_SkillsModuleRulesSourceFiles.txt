@@ -1,0 +1,3 @@
+D:\In Development\Sekirime_Skills\Source\Sekirime_Skills\Sekirime_Skills.Build.cs
+D:\In Development\Sekirime_Skills\Source\Sekirime_Skills.Target.cs
+D:\In Development\Sekirime_Skills\Source\Sekirime_SkillsEditor.Target.cs

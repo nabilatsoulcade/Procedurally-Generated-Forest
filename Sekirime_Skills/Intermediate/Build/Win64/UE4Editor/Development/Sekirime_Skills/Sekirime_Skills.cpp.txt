@@ -1,0 +1,2 @@
+D:\In Development\Sekirime_Skills\Intermediate\Build\Win64\UE4Editor\Development\Sekirime_Skills\Definitions.Sekirime_Skills.h
+d:\in development\sekirime_skills\source\sekirime_skills\Sekirime_Skills.h
