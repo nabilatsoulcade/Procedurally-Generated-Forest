@@ -1,31 +1,17 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\na127140\Documents\GitHub\Procedurally-Generated-Forest).
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\In Development\Procedurally-Generated-Forest).
   Creating makefile for Sekirime_SkillsEditor (ini files are newer than makefile)
   Parsing headers for Sekirime_SkillsEditor
-    Running UnrealHeaderTool "C:\Users\na127140\Documents\GitHub\Procedurally-Generated-Forest\Sekirime_Skills\Sekirime_Skills.uproject" "C:\Users\na127140\Documents\GitHub\Procedurally-Generated-Forest\Sekirime_Skills\Intermediate\Build\Win64\Sekirime_SkillsEditor\Development\Sekirime_SkillsEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for Sekirime_SkillsEditor in 4.8580871 seconds
-  Using Visual Studio 2019 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Distributing 6 actions to XGE
-  --------------------Build System Warning---------------------------------------
-  License is invalid:
-      License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
-      This build will run in standalone mode.
-  
-  -------------------------------------------------------------------------------
-  --------------------Project: Default-------------------------------------------
-  TerrainGenerator.cpp (0:00.64 at +0:00)
-  Sekirime_Skills.init.gen.cpp (0:00.53 at +0:00)
-  TerrainGenerator.gen.cpp (0:00.79 at +0:01)
-  UE4Editor-Sekirime_Skills-0013.dll (0:00.79 at +0:02)
-     Creating library C:\Users\na127140\Documents\GitHub\Procedurally-Generated-Forest\Sekirime_Skills\Intermediate\Build\Win64\UE4Editor\Development\Sekirime_Skills\UE4Editor-Sekirime_Skills-0013.suppressed.lib and object C:\Users\na127140\Documents\GitHub\Procedurally-Generated-Forest\Sekirime_Skills\Intermediate\Build\Win64\UE4Editor\Development\Sekirime_Skills\UE4Editor-Sekirime_Skills-0013.suppressed.exp
-  UE4Editor-Sekirime_Skills-0013.lib (0:00.07 at +0:02)
-     Creating library C:\Users\na127140\Documents\GitHub\Procedurally-Generated-Forest\Sekirime_Skills\Intermediate\Build\Win64\UE4Editor\Development\Sekirime_Skills\UE4Editor-Sekirime_Skills-0013.lib and object C:\Users\na127140\Documents\GitHub\Procedurally-Generated-Forest\Sekirime_Skills\Intermediate\Build\Win64\UE4Editor\Development\Sekirime_Skills\UE4Editor-Sekirime_Skills-0013.exp
-  Sekirime_SkillsEditor.target (0:00.14 at +0:02)
-  ---------------------- Done ----------------------
-  
-      Rebuild All: 1 succeeded, 0 failed, 0 skipped
-  
-  1 build system warning(s):
-     - License is invalid
-  
-  Total time in XGE executor: 3.21 seconds
-  Total execution time: 9.56 seconds
+    Running UnrealHeaderTool "D:\In Development\Procedurally-Generated-Forest\Sekirime_Skills\Sekirime_Skills.uproject" "D:\In Development\Procedurally-Generated-Forest\Sekirime_Skills\Intermediate\Build\Win64\Sekirime_SkillsEditor\Development\Sekirime_SkillsEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for Sekirime_SkillsEditor in 6.5350101 seconds
+  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 6 actions with 16 processes...
+    [1/6] Sekirime_Skills.init.gen.cpp
+    [2/6] TerrainGenerator.cpp
+    [3/6] TerrainGenerator.gen.cpp
+    [4/6] UE4Editor-Sekirime_Skills-0012.lib
+       Creating library D:\In Development\Procedurally-Generated-Forest\Sekirime_Skills\Intermediate\Build\Win64\UE4Editor\Development\Sekirime_Skills\UE4Editor-Sekirime_Skills-0012.lib and object D:\In Development\Procedurally-Generated-Forest\Sekirime_Skills\Intermediate\Build\Win64\UE4Editor\Development\Sekirime_Skills\UE4Editor-Sekirime_Skills-0012.exp
+    [5/6] UE4Editor-Sekirime_Skills-0012.dll
+       Creating library D:\In Development\Procedurally-Generated-Forest\Sekirime_Skills\Intermediate\Build\Win64\UE4Editor\Development\Sekirime_Skills\UE4Editor-Sekirime_Skills-0012.suppressed.lib and object D:\In Development\Procedurally-Generated-Forest\Sekirime_Skills\Intermediate\Build\Win64\UE4Editor\Development\Sekirime_Skills\UE4Editor-Sekirime_Skills-0012.suppressed.exp
+    [6/6] Sekirime_SkillsEditor.target
+  Total time in Parallel executor: 7.04 seconds
+  Total execution time: 15.58 seconds

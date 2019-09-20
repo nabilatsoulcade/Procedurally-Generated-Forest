@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeSekirime_Skills_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x3ED1048B,
+				0xD23830E1,
 				0x75F94FD3,
 				METADATA_PARAMS(nullptr, 0)
 			};

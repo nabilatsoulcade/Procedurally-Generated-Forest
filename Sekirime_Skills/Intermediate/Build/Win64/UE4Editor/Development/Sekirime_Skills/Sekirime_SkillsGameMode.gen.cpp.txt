@@ -1,9 +1,9 @@
-C:\Users\na127140\Documents\GitHub\Procedurally-Generated-Forest\Sekirime_Skills\Intermediate\Build\Win64\UE4Editor\Development\Sekirime_Skills\Definitions.Sekirime_Skills.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\na127140\Documents\GitHub\Procedurally-Generated-Forest\Sekirime_Skills\Source\Sekirime_Skills/Sekirime_SkillsGameMode.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-c:\users\na127140\documents\github\procedurally-generated-forest\sekirime_skills\intermediate\build\win64\ue4editor\inc\sekirime_skills\Sekirime_SkillsGameMode.generated.h
+D:\In Development\Procedurally-Generated-Forest\Sekirime_Skills\Intermediate\Build\Win64\UE4Editor\Development\Sekirime_Skills\Definitions.Sekirime_Skills.h
+D:\Unreal\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Unreal\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\In Development\Procedurally-Generated-Forest\Sekirime_Skills\Source\Sekirime_Skills/Sekirime_SkillsGameMode.h
+D:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+D:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+D:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+D:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+d:\in development\procedurally-generated-forest\sekirime_skills\intermediate\build\win64\ue4editor\inc\sekirime_skills\Sekirime_SkillsGameMode.generated.h

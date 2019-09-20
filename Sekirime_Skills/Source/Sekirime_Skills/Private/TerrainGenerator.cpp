@@ -28,26 +28,8 @@ void ATerrainGenerator::Tick(float DeltaTime)
 
 void ATerrainGenerator::GenerateTerrain()
 {
-	//Creates Mesh of Triangles
-	UKismetProceduralMeshLibrary::CreateGridMeshTriangles(TerrainWidth, TerrainHeight,true, TerrainMesh);
+	//Creates A Grid Mesh and outputs the Triangles, Vertices, and UVs
+	//UKismetProceduralMeshLibrary::CreateGridMeshWelded(TerrainWidth, TerrainHeight, TerrainGridSpacing);
 	
-	//Since Unreal doesn't have a cast for a TArray<int32> to TArray<FCustomMeshTriangle>
-	TerrainMeshVertex.SetNum((sizeof(TerrainMesh)/3), true);
-
-	for (int i = 0; i < (sizeof(TerrainMesh)) - 1; i+=3)
-	{
-		TerrainMeshVertex[i/3] = FVector(TerrainMesh[i], TerrainMesh[i+1], TerrainMesh[i+2]);
-	}
-	/*
-	//Since Unreal doesn't have a cast for a TArray<int32> to TArray<FCustomMeshTriangle>
-	TerrainMeshTris.SetNum((sizeof(TerrainMesh) - 1) / 3, true);
-
-	for (int i = 0; i < 3; i++)
-	{
-		TerrainMeshTris[i].Vertex0 = FVector(TerrainMesh[i], TerrainMesh[i + 1], TerrainMesh[i + 2]);
-		TerrainMeshTris[i].Vertex1 = FVector(TerrainMesh[i + 3], TerrainMesh[i + 4], TerrainMesh[i + 5]);
-		TerrainMeshTris[i].Vertex2 = FVector(TerrainMesh[i + 6], TerrainMesh[i + 7], TerrainMesh[i + 8]);
-	}
-	*/
 }
 

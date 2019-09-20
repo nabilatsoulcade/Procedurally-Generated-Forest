@@ -42,18 +42,30 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	/** Terrain Width */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings, meta = (ClampMin = "3", UIMin = "3"))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings, meta = (ClampMin = "1", UIMin = "1"))
 		int32 TerrainWidth = 3;
-	/** Terrain Width */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings, meta = (ClampMin = "3", UIMin = "3"))
+	/** Terrain Height */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings, meta = (ClampMin = "1", UIMin = "1"))
 		int32 TerrainHeight = 3;
+	/** Terrain Height */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings, meta = (ClampMin = "1", UIMin = "1"))
+		int32 TerrainGridSpacing = 16;
+	/** Terrain Generation Debug Mode */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings, meta = (ClampMin = "1", UIMin = "1"))
+		bool TerrainDebugMode = true;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = TerrainGenerationSettings)
-		TArray< int32 > TerrainMesh;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = TerrainGenerationSettings)
-		TArray< FCustomMeshTriangle > TerrainMeshTris;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = TerrainGenerationSettings)
-		TArray< FVector > TerrainMeshVertex;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings)
+		float TerrainVarianceMin = -1.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings)
+		float TerrainVarianceMax = 1.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings)
+		TArray< int32 > TerrainTriangles;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings)
+		TArray< FVector > TerrainVertices;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TerrainGenerationSettings)
+		TArray< FVector2D > TerrainUV;
+
 	//Terrain Generation Algorithm
 	UFUNCTION()
 		void GenerateTerrain();

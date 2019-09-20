@@ -1,3 +1,3 @@
-C:\Users\na127140\Documents\GitHub\Procedurally-Generated-Forest\Sekirime_Skills\Source\Sekirime_Skills\Sekirime_Skills.Build.cs
-C:\Users\na127140\Documents\GitHub\Procedurally-Generated-Forest\Sekirime_Skills\Source\Sekirime_Skills.Target.cs
-C:\Users\na127140\Documents\GitHub\Procedurally-Generated-Forest\Sekirime_Skills\Source\Sekirime_SkillsEditor.Target.cs
+D:\In Development\Procedurally-Generated-Forest\Sekirime_Skills\Source\Sekirime_Skills\Sekirime_Skills.Build.cs
+D:\In Development\Procedurally-Generated-Forest\Sekirime_Skills\Source\Sekirime_Skills.Target.cs
+D:\In Development\Procedurally-Generated-Forest\Sekirime_Skills\Source\Sekirime_SkillsEditor.Target.cs
